@@ -1,0 +1,9 @@
+.btn-primary{
+    height: 40px;
+    width: 150px;  
+    background: linear-gradient(to right, #fa6220,#ef8b33);
+    border: none;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+}
