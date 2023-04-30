@@ -1,0 +1,56 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../assets/Rajdhani-Bold.ttf);
+}
+@font-face {
+    font-family: parafont;
+    src: url(../assets/Rajdhani-Regular.ttf);
+}
+@font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+}
+.project_card{
+    background: linear-gradient(#00000096,#0000002a, #0000008f), url(../assets/offer-image1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 360px;
+    padding: 1rem;
+    margin-inline: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+   
+}
+.project_card_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+}
+.project_card button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    
+
+}
+.project_card h3{
+    font-family: headerfont;
+    font-size: 1.7rem;
+
+}
+.project_card p{
+    font-family: subheadfont;
+
+}
+.project_card_starttext{
+    padding: 4px;
+    background-color: rgb(59, 55, 55);
+    border-radius: 20px;
+    font-size: 14px;
+}
