@@ -5,6 +5,8 @@ import Homeoffer from './Homeoffer'
 import Homeabout from './Homeabout'
 import Achievements from './Achievements'
 import Projects from './Projects'
+import Testimonials from './Testimonials'
+import Blogs from './Blogs'
 import "../../styles/Home.css"
 
 const Home = () => {
@@ -16,6 +18,8 @@ const Home = () => {
       <Homeabout/>
       <Achievements/>
       <Projects/>
+      <Testimonials/>
+      <Blogs/>
     </div>
   )
 }

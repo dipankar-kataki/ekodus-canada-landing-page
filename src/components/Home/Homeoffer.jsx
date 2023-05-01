@@ -4,6 +4,8 @@ import offericon1 from '../../assets/offer-icon1.png'
 import offertopback from "../../assets/offer-toplayer.png"
 import offerbottomback from "../../assets/offer-bottomlayer.png"
 
+import Card from '../../UI/Card'
+
 const Homeoffer = () => {
   return (
     <div className='homeoffer'>
@@ -15,39 +17,9 @@ const Homeoffer = () => {
             <p className='homeoffer_header_info'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos laboriosam quam dicta harum suscipit voluptatem.</p>
         </div>
         <div className='homeoffer_cards'>
-            <div className='homeoffer_card'>
-                <div className='homeoffer_card_imagesection'>
-                  
-                </div>
-                <div className='offericon'>
-                    <img  src={offericon1} alt="" />
-                </div>
-                <div className='homeoffer_card_textsection'>
-                    <h2>Perfect solutions that business demands</h2>
-                </div>
-            </div>
-            <div className='homeoffer_card'>
-                <div className='homeoffer_card_imagesection'>
-                  
-                </div>
-                <div className='offericon'>
-                    <img  src={offericon1} alt="" />
-                </div>
-                <div className='homeoffer_card_textsection'>
-                    <h2>Perfect solutions that business demands</h2>
-                </div>
-            </div>
-            <div className='homeoffer_card'>
-                <div className='homeoffer_card_imagesection'>
-                  
-                </div>
-                <div className='offericon'>
-                    <img  src={offericon1} alt="" />
-                </div>
-                <div className='homeoffer_card_textsection'>
-                    <h2>Perfect solutions that business demands</h2>
-                </div>
-            </div>
+            <Card/>
+            <Card/>
+            <Card/>
         </div>
         </div>
         {/* <img className='offerbottomback' src={offerbottomback} alt="" /> */}

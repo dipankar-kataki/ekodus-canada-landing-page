@@ -3,8 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import OwlCarousel from "react-owl-carousel"
+import 'owl.carousel/dist/assets/owl.carousel.min.css'
+import 'owl.carousel/dist/assets/owl.theme.default.min.css'
 
 import ProjectCard from '../../UI/ProjectCard';
 
@@ -48,7 +49,12 @@ const Projects = () => {
 
         </div>
         <div className='project_body'>
-        <Carousel responsive={responsive} autoPlay={true} infinite={true}>
+        <OwlCarousel 
+            className='owl-theme'
+            items="4"
+            autoPlay
+            dots
+        >
            <ProjectCard/> 
            <ProjectCard/>   
            <ProjectCard/>      
@@ -59,7 +65,7 @@ const Projects = () => {
            <ProjectCard/>   
            <ProjectCard/>   
            <ProjectCard/>   
-         </Carousel>
+         </OwlCarousel>
         </div>
     </div>
   )
