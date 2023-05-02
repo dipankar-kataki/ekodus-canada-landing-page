@@ -214,11 +214,17 @@
     
 }
 @media screen and (max-width:491px){
+    .homeabout{
+        margin-top:1rem ;
+    }
     .headerhomeabout_right{
-        height: 100vh;
+        height: 94vh;
     }
     .header_right_text{
         width: 350px;
+    }
+    .homeabout_imgcontainer{
+        top: 370px;
     }
     .homeabout_imgmain{
         width: 280px;

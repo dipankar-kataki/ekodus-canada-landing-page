@@ -19,17 +19,17 @@ const Testimonials = () => {
     {
       id: 1,
       fullname: "Albert Einstein",
-      review: "This website works really well. It sympathetically improves my baseball by a lot heard about this on balearic beat radio, decided to give it a try." 
+      review: "This website works really well. It sympathetically improves my baseball by a lot heard about this on balearic beat radio, decided to give it a try. ahndfj dhfj djhfj jhdaf  hadfj jhd flh adfh ldhf " 
     },
     {
       id: 2,
       fullname: "Elon Musk",
-      review: "My neighbor Montserrat has one of these. She works as a circus performer and she says it looks shriveled. this amazon is gracious." 
+      review: "My neighbor Montserrat has one of these. She works as a circus performer and she says it looks shriveled. this amazon is gracious. ahndfj dhfj djhfj jhdaf  hadfj jhd flh adfh ldhf" 
     },
     {
       id: 3,
       fullname: "Isaac Newton",
-      review: "sjdfh adjfnd jdfj jadfb jdbfjksd jksdfbkj  sddhf foisd fihfosd hfdiof dof dofhsdiof ohufhfio  dofsdofsdoif sdofoid fsdof osd fousdf so" 
+      review: "sjdfh adjfnd jdfj jadfb jdbfjksd jksdfbkj  sddhf foisd fihfosd hfdiof dof dofhsdiof ohufhfio  dofsdofsdoif sdofoid fsdof osd fousdf so ahndfj dhfj djhfj jhdaf  hadfj jhd flh adfh ldhf" 
     }
   ];
 
@@ -71,8 +71,8 @@ const Testimonials = () => {
             timeout={300}
             classNames={"fade"}
           >
-            <div className='testimonial_review'>
-              <p>{testimonials[activeIndex].review}</p>
+            <div className='testimonial_reviews'>
+              <p className='testimonial_review'>{testimonials[activeIndex].review}</p>
               <div className='testimonial_identity'>
                 <div className='testicon'>
                   <img src={testicon} alt="" />
@@ -84,10 +84,10 @@ const Testimonials = () => {
           </CSSTransition>
         </SwitchTransition>
           <div className='testimonial_arrowbtns'>
-            <button onClick={prevfunction}>
+            <button onClick={prevfunction} style={{color:"black"}}>
               <AiOutlineArrowLeft/>
             </button>
-            <button onClick={nextfunction}>
+            <button onClick={nextfunction} style={{color:"#fa6220"}}>
               <AiOutlineArrowRight/>
             </button>
           </div>

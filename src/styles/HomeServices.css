@@ -254,6 +254,11 @@
     .services_info_body ul li::before{
         display: none;
     }
+    .services_info_body ul{
+        margin-left: 0;
+
+    }
+
 }
 @media screen and (max-width: 864px){
     .service_card{
@@ -296,13 +301,16 @@
         padding-block: 3rem 2.7rem;
     }
     .service_card{
-        width: 340px;
+        width: 95vw;
         height: 290px;
         align-items: center;
         text-align: center;
     }
     .service_card_info h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    .service_card_info p{
+        font-size: 1rem;
     }
     .service_card_img img{
         width: 40px;
@@ -317,6 +325,7 @@
     .service_info{
         padding:10px;
         margin-top: 15px;
+
     }
     .service_info h2{
         font-size: 1.7rem;
@@ -325,9 +334,16 @@
         font-size: 1rem;
         
     }
+    .services_info_header p{
+        font-size: 1.2rem;
+    }
     .services_info_body ul li{
         font-size: 1rem;
     
+    }
+    .services_info_body ul li{
+        line-height: 24px;
+        width: 45ch;
     }
     
 

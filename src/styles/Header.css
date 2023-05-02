@@ -250,13 +250,13 @@
 @media screen and (max-width: 400px){
     
     .header__banner_img{
-        top:430px
+        top:420px
     }
     .header_container{
-        height: 790px;
+        height: 780px;
     }
     .header__left{
-        height: 790px;
+        height: 780px;
        
     }
     .header__banner_img_main{

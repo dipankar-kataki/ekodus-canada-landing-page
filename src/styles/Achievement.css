@@ -88,20 +88,29 @@
 }
 @media screen and (max-width:1020px){
     .achievements{
-        margin-top: 100px;
+        margin-block: 100px 150px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .achievements_left{
         padding-left: 0rem;
+        height:auto;
+        margin-bottom: 1rem;
+
     }
     .achievements_left_text{
         width: 100vw;
         text-align: center;
         justify-content: center;
         align-items: center;
-        padding: 3rem;
+        padding: 1rem;
+    }
+    .achievements_right{
+        height:auto;
+    }
+    .achievements_btn{
+        margin-top: 1rem;
     }
 }
 @media screen and (max-width:768px){
@@ -139,14 +148,17 @@
 }
 @media screen and (max-width:576px){
     .achievements{
-        margin-top: 10px;
+        margin-top: 0px;
+        height: 100%;
+        margin-top: 2.3rem;
     }
     .achievements_left_text h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
     
     }
     .achievements_left_text_start{
         font-size: 1.2rem;
+        margin-bottom: 10px;
     }
     .achievements_left_text_desc{
         font-size: 1rem;

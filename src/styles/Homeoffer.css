@@ -14,8 +14,9 @@
     padding-block: 2rem;
 }
 .offertopback{
-    width: 100%;
     position: absolute;
+    z-index: -1;
+    width: 90vw;
 }
 .homeoffer_container{
     padding: 5rem 1rem 1rem 1rem;
@@ -29,12 +30,12 @@
 .homeoffer_header_start{
     font-family: subheadfont;
     color:#fa6220;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .homeoffer_header h2{
     font-size: 4rem;
     font-family: headerfont;
-    color: rgba(0, 0, 0, 0.904);
+    color: rgb(20, 20, 20);
 }
 .homeoffer_header_info{
     font-family: subheadfont;
@@ -84,6 +85,9 @@
 
 }
 @media screen and (max-width:576px){
+    .homeoffer_container{
+        padding: 2rem 1rem 1rem 1rem;
+    }
     .homeoffer_header h2{
         font-size: 1.5rem;
     }

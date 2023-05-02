@@ -12,7 +12,7 @@ const Homeoffer = () => {
         <img className='offertopback' src={offertopback} alt="" />
         <div className='homeoffer_container'>
         <div className='homeoffer_header'>
-            <p className='homeoffer_header_start'>WHAT WE OFFER</p>
+            <p className='homeoffer_header_start'>What we offer</p>
             <h2>WHY SHOULD YOUR CHOOSE US</h2>
             <p className='homeoffer_header_info'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos laboriosam quam dicta harum suscipit voluptatem.</p>
         </div>
