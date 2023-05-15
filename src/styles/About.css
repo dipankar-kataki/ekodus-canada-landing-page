@@ -1,0 +1,205 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../assets/Rajdhani-Bold.ttf);
+}
+@font-face {
+    font-family: parafont;
+    src: url(../assets/Rajdhani-Regular.ttf);
+}
+@font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+}
+
+
+.about_page_header_container{
+    background-color: #fa6220;
+}
+.about_page_header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(#171a33ef,#191c38ef), url(../assets/banner_image.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom-right-radius: 600px;
+    color: white;
+
+}
+.about_page_header h1{
+    font-family: headerfont;
+    font-size: 4rem;
+}
+.about_page_header p{
+    font-family: subheadfont;
+    font-size: 1.3rem;
+}
+.about_header_loc{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-block: 2rem;
+    background-color: #252a55;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+
+.aboutus_content{
+    padding: 5rem 2rem;
+    display: flex;
+    gap: 5rem;
+    position: relative;
+    margin-bottom: 10rem;
+}
+.about_top_layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.6;
+   
+
+}
+.about_style_layer{
+    position: absolute;
+    right: 3%;
+    top: 0;
+}
+.aboutus_content h2{
+    margin-block: 1rem;
+    font-size: 2.5rem;
+    font-family: headerfont;
+}
+.aboutus_content p{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    font-family: subheadfont;
+    color: rgb(73, 73, 73);
+    text-align: justify;
+    
+}
+.aboutus_content_img{
+    position: relative;
+}
+.aboutus_content_img_primary{
+    width: 450px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.aboutus_content_img_sec{
+    position: absolute;
+    width: 220px;
+    left: -15%;
+    bottom: -20%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+/* Why should you choose us */
+
+.about_content_two{
+    margin-top:5rem ;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom right, #fa6220, #ef8b33);
+    position: relative;
+}
+
+.about_two_imgcontainer{
+    position: absolute;
+    left: 12%;
+    top: 17%;
+
+}
+.textcircle{
+    position: absolute;
+    right: 0;
+    top:-5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background-color: #fa6220;
+    border-radius: 50%;
+    border: 4px solid white;
+    color: white;
+    text-align: center;
+}
+.textcircle h3{
+    font-family: headerfont;
+    font-size: 3.1rem;
+}
+.textcircle p{
+    font-family: subheadfont;
+    font-size: 1rem;
+}
+.about_two_imgmain{
+    width: 450px;
+    border-bottom-left-radius:180px;
+    border-bottom-right-radius: 180px;
+    border-top-right-radius: 180px;
+
+}
+.about_two_imgsub{
+    width: 200px;
+    position: absolute;
+    top: 70%;
+    left: -15%;
+    border-bottom-left-radius:60px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top:8px solid white;
+    border-right:8px solid white;
+}
+.header_about_right{
+    width: 64vw;
+    height: 120vh;
+    background: linear-gradient(#171a33ef,#191c38ef),url(../assets/banner_image.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 500px;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+.header_right_text{
+    padding-left: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    width: 100%;
+}
+
+
+.header_right_text h2{
+    font-family: headerfont;
+    font-size: 2.5rem;
+    color: white;
+    line-height: 4rem;
+
+}
+.header_right_text_desc{
+    font-family: subheadfont;
+    color: white;
+    margin-top: 1rem;
+}
+.header_right_text_desc ul li{
+    font-size: 14px;
+    line-height: 2rem;
+    margin-left: 1rem;
+
+}

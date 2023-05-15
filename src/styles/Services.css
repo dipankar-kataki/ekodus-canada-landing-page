@@ -1,0 +1,30 @@
+.service_page_header_container{
+    background-color: #fa6220;
+}
+.service_page_header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(#171a33ef,#191c38ef), url(../assets/banner_image.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom-right-radius: 600px;
+    color: white;
+
+}
+.service_page_header h1{
+    font-family: headerfont;
+    font-size: 4rem;
+}
+.service_page_header p{
+    font-family: subheadfont;
+    font-size: 1.3rem;
+}
+@media screen and (max-width: 501px){
+    
+
+}

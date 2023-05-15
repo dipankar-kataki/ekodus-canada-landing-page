@@ -1,0 +1,35 @@
+.career_page_header_container{
+    background-color: #fa6220;
+}
+.career_page_header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(#171a33ef,#191c38ef), url(../../assets/banner_image.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom-right-radius: 600px;
+    color: white;
+
+}
+.career_page_header h1{
+    font-family: headerfont;
+    font-size: 4rem;
+}
+.career_page_header p{
+    font-family: subheadfont;
+    font-size: 1.3rem;
+}
+.career_header_loc{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-block: 2rem;
+    background-color: #252a55;
+    padding: 1rem;
+    border-radius: 30px;
+}
