@@ -17,7 +17,9 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "formik": "^2.2.9",
     "framer-motion": "^10.12.4",
+    "html-react-parser": "^3.0.16",
     "ngrok": "^4.3.3",
     "owl.carousel": "^2.3.4",
     "react": "^18.2.0",
@@ -29,7 +31,9 @@
     "react-router-dom": "^6.11.0",
     "react-slick": "^0.29.0",
     "react-transition-group": "^4.4.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.7.5",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

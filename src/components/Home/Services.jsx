@@ -1,70 +1,50 @@
 import React from 'react'
 import {BsFillArrowRightCircleFill} from 'react-icons/bs'
-import servicecardimg1 from "../../assets/digital marketing.png"
-import servicecardimg2 from "../../assets/Data.png"
-import servicecardimg3 from "../../assets/service-producticon.png"
-import servicecardimg4 from "../../assets/UIUX.png"
+import servicecardimg1 from "../../assets/Home/digital marketing.png"
+import servicecardimg2 from "../../assets/Home/Data.png"
+import servicecardimg3 from "../../assets/Home/service-producticon.png"
+import servicecardimg4 from "../../assets/Home/UIUX.png"
 
 import backlayer1 from "../../assets/service-leftlayer.png"
 import backlayer2 from "../../assets/service-rightcircle.png"
 
-import "../../styles/HomeServices.css"
+import "./HomeServices.css"
+import ServiceCard from '../../UI/ServiceCard'
+import { Link } from 'react-router-dom'
+
 
 const Services = () => {
+    const servicelist = [
+        {
+            title: "Website Development",
+            desc: "Creating dynamic, responsive websites tailored to meet businesses' unique online requirements for success."
+        },
+        {
+            title: "Digital Marketing",
+            desc: "- Utilizing digital technologies and channels to effectively promote products, services, or brands and engage potential customers.  "
+        },
+        {
+            title: "IT Training",
+            desc: "Offering comprehensive programs for acquiring technical skills and staying updated with the latest technologies. "
+        },
+        {
+            title: "Staff Augmentation",
+            desc: "Supplying skilled professionals to support businesses in achieving objectives and timely project completion. "
+        }
+    ]
   return (
     <div className='services'>
         <img className='backlayer_one' src={backlayer1} alt="" />
         <div className='service_cards'>
-            <div className='service_card'>
-                <div className='service_card_img'>
-                    <img src={servicecardimg1} alt="" />
-                </div>
-                <div className='service_card_info'>
-                    <h2>Website Development</h2>
-                    <p>Creating dynamic and responsive websites that cater to the unique needs of businesses to thrive in the online realm.</p>
-                </div>
-                <button>
-                    <BsFillArrowRightCircleFill size={"45"} className='arrowbtn'  />
-                </button>
+    
+            <ServiceCard title={servicelist[0].title} desc={servicelist[0].desc} img={servicecardimg4}/>
+            <div className='service_card_right'>
+                <ServiceCard title={servicelist[1].title} desc={servicelist[1].desc} img={servicecardimg1} />
 
             </div>
-            <div className='service_card service_card_right'>
-                <div className='service_card_img'>
-                    <img src={servicecardimg2} alt="" />
-                </div>
-                <div className='service_card_info'>
-                    <h2>Digital Marketing </h2>
-                    <p>Promoting products, services, or brands using digital technologies and channels to reach and engage with potential customers.</p>
-                </div>
-                <button>
-                    <BsFillArrowRightCircleFill size={"45"} className='arrowbtn'  />
-                </button>
-
-            </div>
-            <div className='service_card'>
-                <div className='service_card_img'>
-                    <img src={servicecardimg3} alt="" />
-                </div>
-                <div className='service_card_info'>
-                    <h2>IT Training </h2>
-                    <p>Training programs offered help individuals and businesses acquire technical skills and stay current with the latest technologies.. </p>
-                </div>
-                <button>
-                    <BsFillArrowRightCircleFill size={"45"} className='arrowbtn'  />
-                </button>
-
-            </div>
-            <div className='service_card service_card_right'>
-                <div className='service_card_img'>
-                    <img src={servicecardimg4} alt="" />
-                </div>
-                <div className='service_card_info'>
-                    <h2>Staff Augmentation </h2>
-                    <p>Offering skilled professionals to help businesses achieve goals and meet deadlines.</p>
-                </div>
-                <button>
-                    <BsFillArrowRightCircleFill size={"45"} className='arrowbtn'  />
-                </button>
+            <ServiceCard title={servicelist[2].title} desc={servicelist[2].desc} img={servicecardimg3}/>
+            <div className='service_card_right'>
+                <ServiceCard title={servicelist[3].title} desc={servicelist[3].desc} img={servicecardimg2}/>
 
             </div>
         </div>
@@ -75,7 +55,7 @@ const Services = () => {
                 <h2>BEST IT SOLUTION <br /> FOR YOUR BUSINESS</h2>
             </div>
             <div className='services_info_body'>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus autem suscipit possimus perspiciatis minima saepe</p>
+                <p>Empower your business with Ekodus Services—a leading-edge company providing website development, software solutions, digital marketing, IT training, staff augmentation, Salesforce implementation, UI/UX designing, and data analytics.</p>
                 <ul>
                     <li>Website Development
                     </li>
@@ -95,7 +75,7 @@ const Services = () => {
                     </li>
                 </ul>
             </div>
-            <button className='btn-primary'>Get Started</button>
+           <Link to='/services'><button className='btn-primary'>Get Started</button></Link> 
         </div>
     </div>
   )

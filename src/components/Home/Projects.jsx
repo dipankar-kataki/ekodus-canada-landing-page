@@ -17,8 +17,9 @@ import projectimg2 from "../../assets/case-image2.jpg"
 import projectimg3 from "../../assets/case-image3.jpg"
 import projectimg4 from "../../assets/case-image4.jpg"
 import projectimg5 from "../../assets/case-image5.jpg"
+import {Link} from 'react-router-dom'
 
-import "../../styles/Projects.css"
+import "./Projects.css"
 const Projects = () => { 
   const responsive = {
     supersuperLargeDesktop: {
@@ -57,10 +58,6 @@ const Projects = () => {
       desc : "Our KoduCRM is designed to assist you in concentrating on building strong connections with individuals within your organization"
     },
     {
-      title: "KoduLive",
-      desc : "Kõdu is a small village located in the Käru Parish of Rapla County in the western-central region of Estonia. The word 'Kodu' in Estonian translates to 'Home'"
-    },
-    {
       title: "YMOC.com ",
       desc : "YMOC.com is a food delivery application founded by Mark Bordoloi, who is the President of Ekodus, in 2018. It provides an easy way to order food for delivery straight to your doorstep."
     },
@@ -92,11 +89,12 @@ const Projects = () => {
         <img className='offerbottomlayer' src={offerbottomlayer} alt="" />
             <p className='project_header_start'>RECENT PROJECTS</p>
             <h2>OUR LATEST CASE STUDIES</h2>
-            <p className='project_header_desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fugit fugiat quisquam error perferendis dicta ratione exercitationem magni maiores officia.</p>
+            <p className='project_header_desc'>Embark on a journey of inspiration with our latest case studies, illustrating the transformative solutions we provide.</p>
            
 
         </div>
         <div className='project_body'>
+         
         <Carousel 
             responsive={responsive}
             showDots
@@ -107,20 +105,29 @@ const Projects = () => {
             className='slider_container'
             arrows={false}
             infinite
-            
+           
         >
-           <ProjectCard img={projectimg1} title={projectList[0].title} desc={projectList[0].desc}/> 
+           <Link style={{textDecoration: "none", color: "white"}} to='/products'>
+           <ProjectCard img={projectimg1} title={projectList[0].title} desc={projectList[0].desc}/>
+           </Link> 
+           <Link style={{textDecoration: "none", color: "white"}} to='/products'>
            <ProjectCard img={projectimg2} title={projectList[1].title} desc={projectList[1].desc}/>   
+           </Link>
+           <Link style={{textDecoration: "none", color: "white"}} to='/products'>
            <ProjectCard img={projectimg3} title={projectList[2].title} desc={projectList[2].desc}/>      
-           <ProjectCard img={projectimg4} title={projectList[3].title} desc={projectList[3].desc}/>   
-           <ProjectCard img={projectimg5} title={projectList[0].title} desc={projectList[0].desc}/>   
-           <ProjectCard img={projectimg1} title={projectList[1].title} desc={projectList[1].desc}/>   
-           <ProjectCard img={projectimg2} title={projectList[2].title} desc={projectList[2].desc}/>   
-           <ProjectCard img={projectimg3} title={projectList[3].title} desc={projectList[3].desc}/>   
-           <ProjectCard img={projectimg4} title={projectList[0].title} desc={projectList[0].desc}/>   
-           <ProjectCard img={projectimg5} title={projectList[1].title} desc={projectList[1].desc}/>   
+           </Link>
+           <Link style={{textDecoration: "none", color: "white"}} to='/products'>
+           <ProjectCard img={projectimg1} title={projectList[0].title} desc={projectList[0].desc}/>
+           </Link> 
+           <Link style={{textDecoration: "none", color: "white"}} to='/products'>
+           <ProjectCard img={projectimg2} title={projectList[1].title} desc={projectList[1].desc}/>   
+           </Link>
+           <Link style={{textDecoration: "none", color: "white"}} to='/products'>
+           <ProjectCard img={projectimg3} title={projectList[2].title} desc={projectList[2].desc}/>      
+           </Link>
+         
          </Carousel>
-
+         
         </div>
     </div>
   )

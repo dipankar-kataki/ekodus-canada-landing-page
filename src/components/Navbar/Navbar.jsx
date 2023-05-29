@@ -1,18 +1,19 @@
 import React, {useState, useEffect} from 'react'
 import logo from "../../assets/ekodus_logo.png"
 import contactimg from "../../assets/nav-phoneimage.png"
-import "../../styles/Navbar.css"
+import "./Navbar.css"
 
-import {NavLink} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 
 import Menu from '../../UI/Menu'
 import { BiMenuAltLeft } from "react-icons/bi";
+import EkodusLogo from "../../assets/Ekodus_canada_final_logo.png"
+
 
 const Navbar = () => {
   const [menuOpen, ismenuOpen] = useState(false);
   const [navbar,setNavbar] = useState(false)
   const changeBackground = () => {
-    console.log(window.scrollY)
     if (window.scrollY >= 100) {
       setNavbar(true)
     } else {
@@ -29,12 +30,12 @@ const Navbar = () => {
    <div className={`${navbar? 'navbar_active':'navbar'}`}>
     
       <div className='navbar__logo'>
-        <img src={logo} alt="ekodus_logo" />
+        <img src={EkodusLogo} alt="ekodus_logo" />
       </div>
       <div className='navbar__links'>
         <ul>
           <li className='navbar__link'>
-            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to={"/"} >Home</NavLink>
           </li>
           <li className='navbar__link'>
             <NavLink to={"/about"}>About</NavLink>
@@ -50,6 +51,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <Link style={{textDecoration: "none"}} to='/contact'>
       <div className='navbar__contact'>
         <div className='navbar__contact_img'>
         <img src={contactimg} alt="" />
@@ -60,6 +62,7 @@ const Navbar = () => {
         </div>
 
       </div>
+      </Link>
 
         {menuOpen? ( <Menu ismenuOpen={ismenuOpen}/>) :
         (<button

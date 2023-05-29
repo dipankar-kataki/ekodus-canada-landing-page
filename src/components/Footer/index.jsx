@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../styles/Footer.css"
+import "./Footer.css"
 import ekoduslogo from "../../assets/ekodus_logo.png"
 import footercallicon from "../../assets/footer-callicon.png"
 import footeremailicon from "../../assets/footer-emailicon.png"
@@ -17,7 +17,7 @@ const Footer = () => {
             <div className='footer_main'>
             <div className='footer_main_info'>
                 <img className='footer_logo' src={ekoduslogo} alt="" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat harum dolore sequi dolorum eveniet dignissimos ut distinctio repellendus delectus aut.</p>
+                <p>Step into the world of Ekodus, where creativity, innovation, and technology intertwine. With our unrivaled digital solutions and AI designs, we empower Canadian businesses to soar to new heights.</p>
                 <div className='footer_main_info_contacts'>
                     <div className='footer_main_info_contact'>
                         <img src={footercallicon} alt="" />
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
             </div>
             <div className='footer_copyright'>
-                <p>Copyright ©2023 Technofy.com All Rights Reserved</p>
+                <p>Copyright ©2023 Ekodus.com All Rights Reserved</p>
                 <div className='footer_socialicons'>
                     <FaFacebookF size={"20"} color='white'  />
                     <FaTwitter size={"20"} color='white'  />
@@ -71,7 +71,6 @@ const Footer = () => {
         </div>
         <div className='footer_subscribe'>
             <h2>Subscribe to our newsletter today</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto?</p>
             <input type="text" name="" id="" placeholder='Enter your email' />
             <button>Subscribe now</button>
         </div>

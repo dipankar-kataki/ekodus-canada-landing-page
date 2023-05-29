@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/Menu.css"
+import "./Menu.css"
 
 import {NavLink} from "react-router-dom"
 
@@ -16,13 +16,16 @@ const Menu = ({ismenuOpen}) => {
               <NavLink to={"/about"} onClick={()=>ismenuOpen(false)}>About</NavLink>
             </li>
             <li>
-              <NavLink to={"/"} onClick={()=>ismenuOpen(false)}>Products</NavLink>
+              <NavLink to={"/products"} onClick={()=>ismenuOpen(false)}>Products</NavLink>
             </li>
             <li>
-              <NavLink to={"/"} onClick={()=>ismenuOpen(false)}>Services</NavLink>
+              <NavLink to={"/services"} onClick={()=>ismenuOpen(false)}>Services</NavLink>
             </li>
             <li>
-              <NavLink to={"/"} onClick={()=>ismenuOpen(false)}>Career</NavLink>
+              <NavLink to={"/career"} onClick={()=>ismenuOpen(false)}>Career</NavLink>
+            </li>
+            <li>
+              <NavLink to={"/contact"} onClick={()=>ismenuOpen(false)}>Contact</NavLink>
             </li>
           </ul>
         </div>

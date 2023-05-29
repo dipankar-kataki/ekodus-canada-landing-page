@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/ProjectCard.css"
+import "./ProjectCard.css"
 import {BsFillArrowRightCircleFill} from 'react-icons/bs'
 import projectimg1 from  "../assets/case-image4.jpg"
 

@@ -1,15 +1,17 @@
 import React from 'react'
-import "../../styles/About.css"
+import "./About.css"
 import aboutimgmain from "../../assets/about-image1.jpg"
 import homeaboutimgsub from "../../assets/about-image2.jpg"
 import homeaboutbackcircle from "../../assets/about-rightcircle.png"
-import Achievements from "../Home/Achievements"
-import Testimonials from "../Home/Testimonials"
-import Blogs from "../Home/Blogs"
+
 import {BsArrowRight} from "react-icons/bs"
+import {BsEmojiSmileFill} from "react-icons/bs"
+import {MdGroups2} from "react-icons/md"
+import {AiOutlineFieldTime} from "react-icons/ai"
 import toplayer from "../../assets/offer-toplayer.png"
 import stylelayer from "../../assets/service-leftlayer.png"
 import Homeabout from '../Home/Homeabout'
+import markimg from "../../assets/mark-image.png"
 
 const About = () => {
   return (
@@ -18,7 +20,6 @@ const About = () => {
       <div className='about_page_header_container'>
       <div className='about_page_header'>
         <h1>ABOUT US</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, reprehenderit.</p>
         <div className='about_header_loc'>
           <p>Home</p>
           <BsArrowRight/>
@@ -28,8 +29,10 @@ const About = () => {
       </div>
       </div>
       <div className='aboutus_content'>
-      <img src={toplayer} className='about_top_layer' alt="" />
-      <img src={stylelayer} className='about_style_layer' alt="" />
+    
+        {/* <img src={toplayer} className='about_top_layer' alt="" />
+        <img src={stylelayer} className='about_style_layer' alt="" /> */}
+  
         <div className='aboutus_content_text'>
         <h2>About us</h2>
         <p>At Ekodus, we are a team of innovation and technology enthusiasts dedicated to driving digital transformation. Since our inception, we have been providing cutting-edge digital solutions, designing, and AI solutions for our clients. But our reach extends beyond IT services, as we cater to various business sectors across the globe, with a strong presence in North America and the Asia Pacific regions.
@@ -75,8 +78,46 @@ const About = () => {
 
       </div>
     </div>
-      <Blogs/>
-      <Testimonials/>
+    <div className='about_content_three'>
+      <h2>A word from company owner</h2>
+      <div>
+        <div className='owner_img'>
+        <img src={markimg} alt="" />
+        <h4>~ Mark Bordoloi (Global President)</h4>
+        </div>
+        <p>Ekodus Technologies incorporates creativity and imagination to add tangible value to the business of the customers. Since its inception, Ekodus Technologies has been powered by a single vision: to apply our knowledge and skills to the advantage of customers, to help them increase their competitiveness and profitability.
+Our strategy is simple; removing the stress from technology and making it more an asset. We use innovative and new ideas in making the process of web development smooth and fast. We bring a bouquet of cutting edge solutions and expert IT services including web development, Digital Marketing, IT Staffing, IT training, Domain and Hosting, and Wealth Management.
+
+We completely understand your business needs and accordingly build a creative, unique website that makes you stand out from the crowd. We intend to create clear designs and visuals which compel visitors to stay on your page. We work diligently to fulfill your vision of creating a unique brand, identity, and reputation and guarantee 100% satisfaction with the results.</p>
+      </div>
+    </div>
+    <div className='about_content_four'>
+      <div className='about_content_four_numbers'>
+        <BsEmojiSmileFill size={40} color='#fa6220'/>
+        <div>
+          <h2>300+</h2>
+          <p>Happy Clients</p>
+        </div>
+
+      </div>
+      <div className='about_content_four_numbers'>
+        <MdGroups2  size={40} color='#fa6220'/>
+        <div>
+          <h2>120+</h2>
+          <p>Team Members</p>
+        </div>
+
+      </div>
+      <div className='about_content_four_numbers'>
+        <AiOutlineFieldTime  size={40} color='#fa6220'/>
+        <div>
+          <h2>9+</h2>
+          <p>Years in business</p>
+        </div>
+
+      </div>
+    </div>
+
       
 
 

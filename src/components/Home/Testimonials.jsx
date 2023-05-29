@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { SwitchTransition, CSSTransition } from 'react-transition-group'
-import "../../styles/Testimonials.css"
+import "./Testimonials.css"
 import testimage1 from "../../assets/testimonial-centerimage.png"
 import testimage2 from "../../assets/testimonial-image1.png"
 import testimage3 from "../../assets/testimonial-image2.png"
@@ -11,25 +11,30 @@ import testicon from "../../assets/offer-icon1.png"
 
 import {AiOutlineArrowLeft} from 'react-icons/ai'
 import {AiOutlineArrowRight} from 'react-icons/ai'
-
+import {BsChatRightQuoteFill} from "react-icons/bs"
 const Testimonials = () => {
   const [activeIndex,setActiveIndex] = useState(0);
 
   const testimonials = [
     {
       id: 1,
-      fullname: "Albert Einstein",
-      review: "This website works really well. It sympathetically improves my baseball by a lot heard about this on balearic beat radio, decided to give it a try. ahndfj dhfj djhfj jhdaf  hadfj jhd flh adfh ldhf " 
+      fullname: "Peter M - Project Manager",
+      review: "Ekodus has been a trusted partner and always willing to help resolve the most complex of issues. The quality of services and in general work done has been very admiring. I would recommend them for your business branding. " 
     },
     {
       id: 2,
-      fullname: "Elon Musk",
-      review: "My neighbor Montserrat has one of these. She works as a circus performer and she says it looks shriveled. this amazon is gracious. ahndfj dhfj djhfj jhdaf  hadfj jhd flh adfh ldhf" 
+      fullname: "Steve R - Small businesses",
+      review: "The organization is very professional, talented, and helpful in their work. The team that is responsible for our account goes to great lengths to not only solve problems but also suggest improvements beyond the scope of the task." 
     },
     {
       id: 3,
-      fullname: "Isaac Newton",
-      review: "sjdfh adjfnd jdfj jadfb jdbfjksd jksdfbkj  sddhf foisd fihfosd hfdiof dof dofhsdiof ohufhfio  dofsdofsdoif sdofoid fsdof osd fousdf so ahndfj dhfj djhfj jhdaf  hadfj jhd flh adfh ldhf" 
+      fullname: "Robert R - School Owner",
+      review: "I am impressed by the quality of services that I received from Ekodus. You were right on schedule, were professional and courteous in dealings, and deliver services well before time. I am looking forward to working with your company for many years to come." 
+    },
+    {
+      id: 4,
+      fullname: "John K - Business Owner",
+      review: "I wanted to take a moment to thank the whole team of Ekodus Technologies for the services that you have provided. Your team has been a pleasure to work with mere professionalism and dedication. I am satisfied with your cooperation regarding the development of our website and would like to work with you on our future projects."
     }
   ];
 
@@ -75,7 +80,7 @@ const Testimonials = () => {
               <p className='testimonial_review'>{testimonials[activeIndex].review}</p>
               <div className='testimonial_identity'>
                 <div className='testicon'>
-                  <img src={testicon} alt="" />
+                  <BsChatRightQuoteFill color='white' size={30}/>
                 </div>
 
                 <h3>{testimonials[activeIndex].fullname}</h3>
