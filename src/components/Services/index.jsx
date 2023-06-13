@@ -60,7 +60,7 @@ const index = () => {
       <div className='service_prefooter'>
         <h3>Hurry up and contact us today</h3>
         <h2>Free First Consultation</h2>
-        <button className='btn-primary'>Book your consultation</button>
+        <Link to={"/contact"}><button className='btn-primary'>Book your consultation</button></Link>
       </div>
      
     </div>

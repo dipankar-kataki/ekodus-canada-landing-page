@@ -56,7 +56,8 @@
 }
 .navbar__links ul{
     display: flex;
-    gap: 50px;
+    align-items: center;
+    gap: 80px;
     list-style: none;
 }
 .navbar__link a{

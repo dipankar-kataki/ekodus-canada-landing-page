@@ -31,7 +31,7 @@
 }
 .career_details_header_loc{
     display: flex;
-    gap: 2rem;
+    gap: 10px;
     align-items: center;
     margin-block: 2rem;
     background-color: #252a55;
@@ -143,6 +143,7 @@
     width: 170px;
     height: 48px;
 }
+
 
 @media screen and (max-width:1020px){
     .career_details_body_content{

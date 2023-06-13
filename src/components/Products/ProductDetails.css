@@ -31,7 +31,7 @@
 }
 .service_details_header_loc{
     display: flex;
-    gap: 2rem;
+    gap: 10px;
     align-items: center;
     background-color: #252a55;
     padding: 1rem;
@@ -99,7 +99,7 @@
 .contact_card img{
     width: 200px;
 }
-.btn-primary-small {
+.contact_now_btn{
     background: linear-gradient(to right, #fa6220,#ef8b33);
     border: none;
     border-radius: 100px;
@@ -108,9 +108,12 @@
     font-family: headerfont;
     font-size: 1.2rem;
     width: 150px;
-    height: 50px;
+    padding: 1rem;
+    text-decoration: none;
+    
+
 }
-.btn-primary-small:hover{
+.contact_now_btn:hover{
     background: #31375c;
 }
 .contact_no{

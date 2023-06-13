@@ -29,22 +29,22 @@ const Contact = () => {
                 <div className='contact_address'>
                     <GoLocation size={45} color='#fa6220'/>
                     <div className='contact_address_info'>
-                        <h3>Location</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <h3>Canada Satellite Office:</h3>
+                        <p>Ekodus Technologies Canada, Inc. 60 Atlantic Avenue, Suite 200 Toronto, ON M6K 1X9</p>
                     </div>
                 </div>
                 <div className='contact_address'>
                     <AiOutlineMail size={45} color='#fa6220'/>
                     <div className='contact_address_info'>
                         <h3>Email</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p>info@ekodus.com</p>
                     </div>
                 </div>
                 <div className='contact_address'>
                     <BsFillTelephoneFill size={45} color='#fa6220'/>
                     <div className='contact_address_info'>
                         <h3>Phone</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p>+1 647-460-3579</p>
                     </div>
                 </div>
             </div>
@@ -52,9 +52,9 @@ const Contact = () => {
         <div className='contact_page_form'>
           <p>WRITE TO US</p>
           <h2>SEND US A MESSAGE</h2>
-          <form>
-            <input type="text" placeholder='Your Name: ' />
-            <input type="email" placeholder='Your Email: ' />
+          <form action="https://formsubmit.co/rituraj.pathak@ekodus.com" method="POST">
+            <input type="text" placeholder='Your Name: ' name='name' />
+            <input type="email" placeholder='Your Email: ' name='email' />
             <textarea placeholder='Message' name="message" rows="12" cols="60"/>
             <button type='submit'>SEND NOW</button>
 

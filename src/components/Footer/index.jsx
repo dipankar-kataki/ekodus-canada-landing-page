@@ -8,6 +8,7 @@ import {FaFacebookF} from 'react-icons/fa'
 import {FaTwitter} from 'react-icons/fa'
 import {AiOutlineGooglePlus} from 'react-icons/ai'
 import {AiOutlineInstagram} from 'react-icons/ai'
+import {Link} from "react-router-dom"
 
 
 const Footer = () => {
@@ -39,25 +40,17 @@ const Footer = () => {
             <div className='footer_link'>
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <Link to={"/"} style={{textDecoration: "none", color: "white"}}><li>Home</li></Link>
+                    <Link to={"/about"} style={{textDecoration: "none", color: "white"}}><li>About</li></Link>
+                    <Link to={"/services"} style={{textDecoration: "none", color: "white"}}><li>Services</li></Link>
+                    <Link to={"/products"} style={{textDecoration: "none", color: "white"}}><li>Products</li></Link>
+                    <Link to={"/career"} style={{textDecoration: "none", color: "white"}}><li>Career</li></Link>
+                    <Link to={"/contact"} style={{textDecoration: "none", color: "white"}}><li>Contact</li></Link>
+                    <Link to={"/blogspage"} style={{textDecoration: "none", color: "white"}}><li>Blogs</li></Link>
                 </ul>
 
             </div>
-            <div className='footer_link'>
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="#">Cloud Service</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Digital Marketing</a></li>
-                    <li><a href="#">Pricing</a></li>
-                </ul>
-
-            </div>
+          
             </div>
             <div className='footer_copyright'>
                 <p>Copyright ©2023 Ekodus.com All Rights Reserved</p>

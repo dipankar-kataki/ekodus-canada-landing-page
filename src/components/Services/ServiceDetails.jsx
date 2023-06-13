@@ -8,7 +8,7 @@ import contactcardimg from "../../assets/testimonial-image1.png"
 import { useParams } from 'react-router-dom'
 import parse from 'html-react-parser';
 import htmlReactParser from 'html-react-parser';
-
+import { Link } from 'react-router-dom'
 const ServiceDetails = () => {
     const [services, setServices] = useState([]);
     let {id}= useParams();
@@ -86,9 +86,9 @@ const ServiceDetails = () => {
                 <h3>Need any help?</h3>
                 <img src={contactcardimg} alt="" />
                 <div className='contact_no'>
-                    <p>+1-1234567890</p>
+                    <p>+1 647-460-3579</p>
                 </div>
-                <button className='btn-primary-small'>Contact Now</button>
+                <Link to="/contact" className=' contact_now_btn'>Contact Now</Link>
             </div>
             <div className='service_details_body_content_text'>
                 <h2>{services.title}</h2>

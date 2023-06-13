@@ -10,6 +10,7 @@
 .blogs{
     text-align: center;
     position: relative;
+    margin-top: 4rem;
 }
 .blogstopplayer{
     position: absolute;

@@ -16,6 +16,7 @@ import BlogDetails from './components/Blogs/BlogDetails'
 
 import Contact from './components/Contact/Contact'
 import { useEffect } from 'react'
+import BlogsPage from './components/Blogs/BlogsPage'
 
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
             <Route path="/careerdetails/:id" element={<CareerDetails />} />
             <Route path="/blogdetails/:id" element={<BlogDetails />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/blogspage" element={<BlogsPage />} />
+           
           </Route>
         </Routes>
         

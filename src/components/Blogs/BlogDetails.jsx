@@ -1,10 +1,12 @@
 import React,{useEffect,useState} from 'react'
 import {BsArrowRight} from "react-icons/bs"
+import {BiArrowBack} from "react-icons/bi"
 import blogimg from "../../assets/blog_image.jpg"
 import "./BlogDetails.css"
 import Blogs from "../Blogs/Blogs"
 import { useParams } from 'react-router-dom'
 import htmlReactParser from 'html-react-parser';
+import { Link } from 'react-router-dom'
 
 
 
@@ -45,6 +47,7 @@ const BlogDetails = ({title}) => {
           <div className='blog_page_body'>
             <div className='blog_page_content'>
               <div className='blog_page_content_left'>
+                  <div> <BiArrowBack/><Link to={"/blogspage"}> Go back</Link></div>
                   <img src={`https://admin.ekodus.ca/${blogs.image}`} alt="" />
               </div>
               <div className='blog_page_content_right'>

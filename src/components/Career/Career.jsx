@@ -8,6 +8,7 @@ import {FaBalanceScale} from 'react-icons/fa'
 import {MdDeveloperMode} from 'react-icons/md'
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
 import {Link} from "react-router-dom"
+
 import htmlReactParser from 'html-react-parser';
 const Career = () => {
   const [openings, setOpenings]= useState([]);
@@ -18,6 +19,9 @@ const Career = () => {
       setOpenings(data.careers)
 
     })
+
+    
+    
   },[])
 
   return (
@@ -38,7 +42,7 @@ const Career = () => {
           <h2>Why should you join us?</h2>
           <p>Welcome to Ekodus Technology, where innovation and excellence converge! If you're seeking an exciting and rewarding career in the technology industry, you've landed at the right place. At Ekodus, we are a leading technology company dedicated to delivering state-of-the-art solutions to clients across various industries.</p>
 
-          <button className='btn-primary'>Check for Openings</button>
+          <a href={"#career_opening_id"}><button className='btn-primary'>Check for Openings</button></a>
           
         </div>
       
@@ -93,7 +97,7 @@ const Career = () => {
 
             </div>
           </div>
-          <div className='career_openings'>
+          <div className='career_openings' id='career_opening_id'>
             <h2>Openings at Ekodus Technologies</h2>
             
             <div className='job_cards'>

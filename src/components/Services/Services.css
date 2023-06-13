@@ -35,7 +35,7 @@
 }
 .service_header_loc{
     display: flex;
-    gap: 2rem;
+    gap: 10px;
     align-items: center;
     background-color: #252a55;
     padding: 1rem;

@@ -9,6 +9,7 @@ const Card = ({offericon,img,title,to,id}) => {
     <div className='homeoffer_card'>
         <div className='homeoffer_card_imagesection'>
           <img src={img} alt="" />
+          
         </div>
         <div className='offericon'>
             <img className='offericonimg'  src={offericon} alt="" />

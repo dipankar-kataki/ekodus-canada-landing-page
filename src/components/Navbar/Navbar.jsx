@@ -49,20 +49,26 @@ const Navbar = () => {
           <li className='navbar__link'>
             <NavLink to={"/career"}>Career</NavLink>
           </li>
-        </ul>
-      </div>
-      <Link style={{textDecoration: "none"}} to='/contact'>
+          <li className='navbar__link'>
+            <NavLink to={"/blogspage"}>Blogs</NavLink>
+          </li>
+          <li>
+          <Link style={{textDecoration: "none"}} to='/contact'>
       <div className='navbar__contact'>
         <div className='navbar__contact_img'>
         <img src={contactimg} alt="" />
         </div>
         <div className='navbar__contact_text'>
           <p style={{color:"white"}}>Call anytime:</p>
-          <p style={{color:"white"}}><b>+012(345)6789</b></p>
+          <p style={{color:"white"}}><b>+1 647-460-3579</b></p>
         </div>
 
       </div>
       </Link>
+          </li>
+        </ul>
+      </div>
+     
 
         {menuOpen? ( <Menu ismenuOpen={ismenuOpen}/>) :
         (<button
