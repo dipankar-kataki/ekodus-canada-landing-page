@@ -2,6 +2,8 @@ import React from 'react'
 import Blogs from './Blogs'
 import {BsArrowRight} from "react-icons/bs"
 import "./BlogPage.css"
+import { Link } from 'react-router-dom'
+
 
 const BlogsPage = () => {
   return (
@@ -10,7 +12,7 @@ const BlogsPage = () => {
           <div className='career_page_header'>
         <h1>Blogs</h1>
         <div className='career_header_loc'>
-          <p>Home</p>
+        <p><Link to={"/"} style={{textDecoration: "none" ,color:"white"}}>Home</Link></p>
           <BsArrowRight/>
           <p style={{color: "#fa6220"}}>Blogs</p>
 

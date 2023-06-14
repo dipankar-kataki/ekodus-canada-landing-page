@@ -27,7 +27,7 @@ const Products = () => {
       <div className='products_page_header'>
         <h1>OUR PRODUCTS</h1>
         <div className='products_header_loc'>
-          <p>Home</p>
+        <p><Link to={"/"} style={{textDecoration: "none" ,color:"white"}}>Home</Link></p>
           <BsArrowRight/>
           <p style={{color: "#fa6220"}}>Products</p>
 

@@ -12,6 +12,8 @@ import toplayer from "../../assets/offer-toplayer.png"
 import stylelayer from "../../assets/service-leftlayer.png"
 import Homeabout from '../Home/Homeabout'
 import markimg from "../../assets/mark-image.png"
+import { Link } from 'react-router-dom'
+import { color } from 'framer-motion'
 
 const About = () => {
   return (
@@ -21,7 +23,7 @@ const About = () => {
       <div className='about_page_header'>
         <h1>ABOUT US</h1>
         <div className='about_header_loc'>
-          <p>Home</p>
+          <p><Link to={"/"} style={{textDecoration: "none" ,color:"white"}}>Home</Link></p>
           <BsArrowRight/>
           <p style={{color: "#fa6220"}}>About</p>
 
@@ -117,9 +119,6 @@ We completely understand your business needs and accordingly build a creative, u
 
       </div>
     </div>
-
-      
-
 
     </div>
   )

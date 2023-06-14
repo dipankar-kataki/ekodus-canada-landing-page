@@ -49,6 +49,7 @@
     gap: 5rem;
     position: relative;
     margin-bottom: 10rem;
+    margin-inline: 4rem;
 }
 .about_top_layer{
     position: absolute;
@@ -111,7 +112,7 @@
 
 .about_two_imgcontainer{
     position: absolute;
-    left: 12%;
+    left: 13%;
     top: 17%;
 
 }
@@ -158,9 +159,9 @@
     border-right:8px solid white;
 }
 .header_about_right{
-    width: 64vw;
+    width: 70vw;
     height: 120vh;
-    background: linear-gradient(#171a33ef,#191c38ef),url(../assets/banner_image.jpg);
+    background: linear-gradient(#171a33ef,#191c38ef);
     background-size: cover;
     background-position: center;
     border-bottom-left-radius: 500px;
@@ -173,11 +174,11 @@
 
 }
 .header_right_text{
-    padding-left: 15rem;
+    padding-left: 12rem;
     display: flex;
     flex-direction: column;
     gap: 0rem;
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -210,6 +211,7 @@
 }
 .about_content_three{
     margin-bottom: 7rem;
+    margin-inline: 4rem;
 }
 .about_content_three h2{
     margin-bottom: 1rem;
@@ -280,6 +282,13 @@
         left: -10%;
         bottom: -20%;
     }
+    .about_two_imgmain{
+        width: 390px;
+    
+    }
+    .about_two_imgsub{
+        width: 170px;
+    }
 
 }
 @media screen and (max-width:1020px){
@@ -288,6 +297,7 @@
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        margin-inline: 0;
     }
     .aboutus_content_img_primary{
         width: 90%;
@@ -346,11 +356,14 @@
         font-size:2rem;
         margin-inline: 1rem;
     }
+    .about_content_three{
+        margin-inline: 10px;
+    }
 
 }
 @media screen and (max-width:700px){
     .header_about_right{
-        height: 100vh;
+        height: 110vh;
     }
     .header_right_text h2{
         font-size: 1.5rem;
@@ -368,6 +381,9 @@
     }
     .about_content_four_numbers p{
         font-size: 1rem;
+    }
+    .header_right_text{
+        width: 100%;
     }
 
 }

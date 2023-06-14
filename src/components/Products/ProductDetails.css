@@ -85,6 +85,9 @@
     margin-block: 4rem;
 
 }
+.product_img{
+    width: 400px !important;
+}
 .contact_card{
     background-color: #252a55;
     width: 25vw;
@@ -201,4 +204,9 @@
      .service_details_body{
         padding-block: 3rem;
      }
+}
+@media screen and (max-width:576px){
+    .product_img{
+        width: 300px;
+    }
 }

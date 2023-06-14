@@ -79,7 +79,7 @@
 .service:hover{
     background-color: white;
     transform: translateY(-5px);
-    box-shadow: 0 4px 17px 4px #00000007;
+    box-shadow: 0 4px 17px 4px #00000010;
 }
 .service_icon{
     align-self:flex-start;

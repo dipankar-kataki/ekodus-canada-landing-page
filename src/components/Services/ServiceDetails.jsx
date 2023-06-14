@@ -31,7 +31,7 @@ const ServiceDetails = () => {
       <div className='service_details_header'>
         <h1>{services.title}</h1>
         <div className='service_details_header_loc'>
-          <p>Services</p>
+        <p><Link to={"/services"} style={{textDecoration: "none" ,color:"white"}}>Services</Link></p>
           <BsArrowRight/>
           <p style={{color: "#fa6220"}}>{services.title}</p>
 

@@ -6,7 +6,7 @@ import "./Services.css"
 import { BsArrowRight } from 'react-icons/bs'
 
 import { Link } from 'react-router-dom'
-import { BsCodeSlash } from 'react-icons/bs'
+import { AiFillCheckCircle } from 'react-icons/ai'
 
 import parse from 'html-react-parser';
 
@@ -28,7 +28,7 @@ const index = () => {
       <div className='service_page_header'>
         <h1>OUR SERVICES</h1>
         <div className='service_header_loc'>
-          <p>Home</p>
+        <p><Link to={"/"} style={{textDecoration: "none" ,color:"white"}}>Home</Link></p>
           <BsArrowRight/>
           <p style={{color: "#fa6220"}}>Services</p>
 
@@ -44,7 +44,7 @@ const index = () => {
        {services.map((service)=>(
         <div className='service'>
             
-        <BsCodeSlash color='#fa6220' className='service_icon' size={35}/>
+        <AiFillCheckCircle color='#fa6220' className='service_icon' size={35}/>
 
       <div className='service_text'>
       <h3>{service.title}</h3>

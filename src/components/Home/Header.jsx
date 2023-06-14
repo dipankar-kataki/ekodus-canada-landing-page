@@ -37,7 +37,7 @@ const Header = () => {
                 <p className='header__description'>Transform your brand and connect globally - Our platform provides the power and reach you need to succeed!</p>
               </div>
               <div className='header__left_content_buttons'>
-                <button className='btn-primary'>Get Started</button>
+                {/* <button className='btn-primary'>Get Started</button> */}
                 <Link to='/contact'><button className='btn-primary'>Contact Us</button></Link>
               </div>
             </div>

@@ -108,6 +108,11 @@
     gap: 1rem;
     padding: 1rem;
 }
+.footer_subscribe form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .footer_subscribe h2{
     font-family: headerfont;
     color: white;

@@ -22,11 +22,9 @@
 .homeoffer_card_imagesection{
   
     background-position: center;
-    background-size: cover;
     border-top-left-radius:10px ;
     border-top-right-radius:10px ;
-    overflow: hidden;
-    object-fit: contain;
+    
 }
 .homeoffer_card_imagesection img{
     width: 100%;
@@ -36,8 +34,8 @@
 }
 .homeoffer_card_textsection{
     text-align: center;
+    height: 200px;
     padding: 5rem 1rem 1rem 1rem;
-    height: 40%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 

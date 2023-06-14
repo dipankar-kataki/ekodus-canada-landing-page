@@ -58,8 +58,10 @@
 }
 .career_content_intro_cards{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    margin-inline: 4rem;
+    
 }
 .career_content_intro_card{
     width: 300px;
@@ -96,7 +98,8 @@
 .job_cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
     
 }
 .job_card{
@@ -177,6 +180,16 @@
     }
     .career_openings h2{
         font-size: 2rem;
+    }
+    .career_content_intro_cards{
+        justify-content: center;
+        
+    }
+
+}
+@media screen and (max-width:576px){
+    .career_content_intro_cards{
+        margin-inline:10px;
     }
 
 }

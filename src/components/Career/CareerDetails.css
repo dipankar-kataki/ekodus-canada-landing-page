@@ -61,10 +61,14 @@
     font-family: subheadfont;
 }
 .career_details_body_content{
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 5rem;
+}
+.job_desc_head{
+    font-family: headerfont;
+    margin: 4rem 4rem 0rem 4rem;
 }
 .career_body_details{
     width: 50vw;
@@ -78,6 +82,7 @@
 .career_body_details p{
     font-family: subheadfont;
 }
+
 .career_form{
     border-radius: 20px;
     padding: 1rem;

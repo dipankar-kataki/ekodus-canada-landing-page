@@ -33,7 +33,7 @@ const ProductDetails = () => {
       <div className='service_details_header'>
         <h1>{products.title}</h1>
         <div className='service_details_header_loc'>
-          <p>Products</p>
+        <p><Link to={"/products"} style={{textDecoration: "none" ,color:"white"}}>Products</Link></p>
           <BsArrowRight/>
           <p style={{color: "#fa6220"}}>{products.title}</p>
 
@@ -79,7 +79,7 @@ const ProductDetails = () => {
                     
                 </ul>
             </div> */}
-            <img src={`https://admin.ekodus.ca/${products.image}`} alt="" />
+            <img className='product_img' src={`https://admin.ekodus.ca/${products.image}`} alt="" />
 
         </div>
         <div className='service_details_body_container'>

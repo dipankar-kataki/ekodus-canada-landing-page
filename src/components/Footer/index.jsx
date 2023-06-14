@@ -9,9 +9,21 @@ import {FaTwitter} from 'react-icons/fa'
 import {AiOutlineGooglePlus} from 'react-icons/ai'
 import {AiOutlineInstagram} from 'react-icons/ai'
 import {Link} from "react-router-dom"
+import Swal from 'sweetalert2'
 
 
 const Footer = () => {
+    const submitHandler = (e) =>{
+        e.preventDefault()
+
+        Swal.fire({
+            title: 'Success',
+            text: 'Thanks for subscribing to us',
+            icon: 'success',
+            confirmButtonText: 'Okay'
+
+          })
+    }
   return (
     <div className='footer'>
         <div className='footer_main_container'>
@@ -24,14 +36,14 @@ const Footer = () => {
                         <img src={footercallicon} alt="" />
                         <div>
                             <h3>Call us: </h3>
-                            <p>1234567890</p>
+                            <p>+1 647-460-3579</p>
                         </div>
                     </div>
                     <div className='footer_main_info_contact'>
                         <img src={footeremailicon} alt="" />
                         <div>
                             <h3>Email us: </h3>
-                            <p>abcdefg@ekodus.com</p>
+                            <p>info@ekodus.com</p>
                         </div>
                     </div>
 
@@ -64,8 +76,10 @@ const Footer = () => {
         </div>
         <div className='footer_subscribe'>
             <h2>Subscribe to our newsletter today</h2>
-            <input type="text" name="" id="" placeholder='Enter your email' />
-            <button>Subscribe now</button>
+            <form onSubmit={submitHandler}>
+                <input type="text" required name="" id="" placeholder='Enter your email' />
+                <button type='submit' >Subscribe now</button>
+            </form>
         </div>
     </div>
   )

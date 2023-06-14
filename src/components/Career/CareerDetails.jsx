@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import htmlReactParser from 'html-react-parser';
 import axios from 'axios';
+import { Link } from 'react-router-dom'
 
 
 const CareerDetails = () => {
@@ -155,7 +156,7 @@ const CareerDetails = () => {
         <div className='career_details_header'>
         <h1>Career</h1>
         <div className='career_details_header_loc'>
-          <p>Career</p>
+        <p><Link to={"/career"} style={{textDecoration: "none" ,color:"white"}}>Career</Link></p>
           <BsArrowRight/>
           <p style={{color: "#fa6220"}}>Career Details</p>
 
@@ -166,7 +167,11 @@ const CareerDetails = () => {
             <h2>{openings.job_title}</h2>
             <div><p>Job-shift: {openings.job_shift}</p><p>Location: {openings.job_location}</p><p> Experience: {openings.job_experience} years exp.</p></div>
         </div>
+        <h2 className='job_desc_head' >Job description</h2>
+        
         <div className='career_details_body_content'>
+      
+         
             <div className='career_body_details'>
                 <div>{htmlReactParser(String(openings.job_description))}</div>
             </div>

@@ -4,15 +4,58 @@ import {BsArrowRight} from 'react-icons/bs'
 import {GoLocation} from "react-icons/go"
 import {AiOutlineMail} from "react-icons/ai"
 import {BsFillTelephoneFill} from "react-icons/bs"
+import Swal from 'sweetalert2'
+import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
+  const submitHandler = (e) =>{
+    e.preventDefault();
+    document.getElementById('submitbtn').disabled=true;
+    document.getElementById('submitbtn').innerHTML="Please Wait.."
+    axios.defaults.headers.post['Content-Type'] = 'application/json';
+    axios.post('https://formsubmit.co/ajax/info@ekodus.com', {
+    name: document.getElementById('fullname').value,
+    email: document.getElementById('emailid').value,
+    message: document.getElementById('messageid').value
+})
+    .then(response => {
+      
+      Swal.fire({
+        title: 'Success!',
+        text: 'Thank you for reaching out to us',
+        icon: 'success',
+        confirmButtonText: 'Okay'
+
+      })
+      document.getElementById('submitbtn').disabled=false;
+      document.getElementById('submitbtn').innerHTML="SEND NOW"
+      document.getElementById('fullname').value="",
+      document.getElementById('emailid').value="",
+      document.getElementById('messageid').value=""
+    })
+    .catch(error => {
+      Swal.fire({
+        title: 'Error!',
+        text: 'Something went wrong',
+        icon: 'error',
+        confirmButtonText: 'Okay'
+
+      })
+      document.getElementById('submitbtn').disabled=false;
+      document.getElementById('submitbtn').innerHTML="SEND NOW"
+      document.getElementById('fullname').value="",
+      document.getElementById('emailid').value="",
+      document.getElementById('messageid').value="" 
+     });
+  }
   return (
     <div className='contact_page'>
         <div className='contact_page_header_container'>
       <div className='contact_page_header'>
         <h1>CONTACT US</h1>
         <div className='contact_header_loc'>
-          <p>Home</p>
+        <p><Link to={"/"} style={{textDecoration: "none" ,color:"white"}}>Home</Link></p>
           <BsArrowRight/>
           <p style={{color: "#fa6220"}}>Contact</p>
 
@@ -52,11 +95,20 @@ const Contact = () => {
         <div className='contact_page_form'>
           <p>WRITE TO US</p>
           <h2>SEND US A MESSAGE</h2>
-          <form action="https://formsubmit.co/rituraj.pathak@ekodus.com" method="POST">
-            <input type="text" placeholder='Your Name: ' name='name' />
-            <input type="email" placeholder='Your Email: ' name='email' />
-            <textarea placeholder='Message' name="message" rows="12" cols="60"/>
-            <button type='submit'>SEND NOW</button>
+          <form onSubmit={submitHandler} >
+            <input type="text" placeholder='Your Name: ' name='name' required id='fullname' />
+            <input type="email" placeholder='Your Email: ' name='email' required id='emailid' />
+            <textarea placeholder='Message' name="message" rows="12" cols="60" required id='messageid'/>
+            {/* <input type="hidden" name="_next" value={ Swal.fire({
+            title: 'Success!',
+            text: 'You application was submitted',
+            icon: 'success',
+            confirmButtonText: 'Okay'
+
+          })}></input> */}
+          <input type="hidden" name="_captcha" value="false"></input>
+          <input type="hidden" name=""></input>
+          <button type='submit' id='submitbtn'>SEND NOW</button>
 
           </form>
         </div>

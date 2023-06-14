@@ -30,7 +30,7 @@ const Career = () => {
       <div className='career_page_header'>
         <h1>CAREER</h1>
         <div className='career_header_loc'>
-          <p>Home</p>
+        <p><Link to={"/"} style={{textDecoration: "none" ,color:"white"}}>Home</Link></p>
           <BsArrowRight/>
           <p style={{color: "#fa6220"}}>Career</p>
 

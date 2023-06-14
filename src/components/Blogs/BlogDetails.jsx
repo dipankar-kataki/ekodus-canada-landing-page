@@ -36,9 +36,9 @@ const BlogDetails = ({title}) => {
       <div className='career_page_header'>
         <h1>Blogs</h1>
         <div className='career_header_loc'>
-          <p>Home</p>
+        <p><Link to={"/blogspage"} style={{textDecoration: "none" ,color:"white"}}>Blogs</Link></p>
           <BsArrowRight/>
-          <p style={{color: "#fa6220"}}>Blogs</p>
+          <p style={{color: "#fa6220"}}>Blog</p>
 
         </div>
       </div>
@@ -47,7 +47,7 @@ const BlogDetails = ({title}) => {
           <div className='blog_page_body'>
             <div className='blog_page_content'>
               <div className='blog_page_content_left'>
-                  <div> <BiArrowBack/><Link to={"/blogspage"}> Go back</Link></div>
+                  <div style={{marginBlock: "1rem"}}> <BiArrowBack/><Link to={"/blogspage"}> Go back</Link></div>
                   <img src={`https://admin.ekodus.ca/${blogs.image}`} alt="" />
               </div>
               <div className='blog_page_content_right'>
@@ -70,14 +70,6 @@ const BlogDetails = ({title}) => {
               </div>
           </div>
        
-        
-        
-
-     
-         
-        
-    
-     
     </div>
   )
 }
