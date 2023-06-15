@@ -209,4 +209,7 @@
     .product_img{
         width: 300px;
     }
+    .service_details_body_content_text{
+        padding: 10px;
+    }
 }

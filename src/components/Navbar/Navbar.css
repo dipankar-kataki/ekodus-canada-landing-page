@@ -14,7 +14,7 @@
 
 .navbar{
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items:center;
     position: fixed; 
     padding-left: 90px;
@@ -26,7 +26,7 @@
 }
 .navbar_active{
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items:center;
     position: fixed; 
     padding-left: 90px;
@@ -57,7 +57,7 @@
 .navbar__links ul{
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
     list-style: none;
 }
 .navbar__link a{

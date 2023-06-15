@@ -8,6 +8,7 @@ import {FaFacebookF} from 'react-icons/fa'
 import {FaTwitter} from 'react-icons/fa'
 import {AiOutlineGooglePlus} from 'react-icons/ai'
 import {AiOutlineInstagram} from 'react-icons/ai'
+import {AiFillLinkedin} from 'react-icons/ai'
 import {Link} from "react-router-dom"
 import Swal from 'sweetalert2'
 
@@ -53,7 +54,7 @@ const Footer = () => {
                 <h2>Quick Links</h2>
                 <ul>
                     <Link to={"/"} style={{textDecoration: "none", color: "white"}}><li>Home</li></Link>
-                    <Link to={"/about"} style={{textDecoration: "none", color: "white"}}><li>About</li></Link>
+                    <Link to={"/about"} style={{textDecoration: "none", color: "white"}}><li>About us</li></Link>
                     <Link to={"/services"} style={{textDecoration: "none", color: "white"}}><li>Services</li></Link>
                     <Link to={"/products"} style={{textDecoration: "none", color: "white"}}><li>Products</li></Link>
                     <Link to={"/career"} style={{textDecoration: "none", color: "white"}}><li>Career</li></Link>
@@ -67,10 +68,15 @@ const Footer = () => {
             <div className='footer_copyright'>
                 <p>Copyright ©2023 Ekodus.com All Rights Reserved</p>
                 <div className='footer_socialicons'>
+                    <a href="https://www.facebook.com/profile.php?id=100075469916772&mibextid=ZbWKwL" target='_blank'>
                     <FaFacebookF size={"20"} color='white'  />
-                    <FaTwitter size={"20"} color='white'  />
-                    <AiOutlineGooglePlus size={"20"} color='white'  />
+                    </a>
+                    <a href="https://www.linkedin.com/company/ekodus-technologies-canada-inc/" target='_blank'>
+                    <AiFillLinkedin size={"20"} color='white'  />
+                    </a>
+                    <a href="https://instagram.com/ekodustechnologiescanada?igshid=MzRlODBiNWFlZA==" target='_blank'>
                     <AiOutlineInstagram size={"20"} color='white'  />
+                    </a>
                 </div>
             </div>
         </div>

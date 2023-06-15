@@ -116,7 +116,7 @@ const Career = () => {
                 </div>
                 <Link to= {`/careerdetails/${opening.id}`}  params={{"id": opening.id}} className='btn_link'>Apply</Link>
               </div>
-              )) : <p className='noopeningsmsg'>No openings as of now! Check back later</p> }
+              )) : <p className='noopeningsmsg' style={{textAlign:"center"}}>No openings as of now! Check back later</p> }
              
               
 

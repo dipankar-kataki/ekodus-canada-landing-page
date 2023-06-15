@@ -279,6 +279,12 @@
     }
     
  }
+ /* @media screen and (max-width:676px){
+    .testimonials{
+        display: none;
+    }
+    
+ } */
  @media screen and (max-width:512px){
     .testimg1{
         width: 170px;

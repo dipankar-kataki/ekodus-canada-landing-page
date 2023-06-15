@@ -9,6 +9,7 @@ import {FaFacebookF} from 'react-icons/fa'
 import {AiOutlineTwitter} from 'react-icons/ai'
 import {AiOutlineGooglePlus} from 'react-icons/ai'
 import {AiOutlineInstagram} from 'react-icons/ai'
+import {AiFillLinkedin} from "react-icons/ai"
 import { Link } from 'react-router-dom'
 
 const Header = () => {
@@ -17,18 +18,21 @@ const Header = () => {
         <div className='header'>
           <div className='header__left'>
             <div className='header_social_icons'>
+            <a href="https://www.facebook.com/profile.php?id=100075469916772&mibextid=ZbWKwL" style={{color:'white'}} target='_blank'>
               <button>
                 <FaFacebookF size={"22"} className='header_social_icon'  />
               </button>
+              </a>
+              <a href="https://www.linkedin.com/company/ekodus-technologies-canada-inc/" style={{color:'white'}} target='_blank'>
               <button>
-                <AiOutlineTwitter size={"25"} className='header_social_icon'  />
+                <AiFillLinkedin size={"25"} className='header_social_icon'  />
               </button>
-              <button>
-                <AiOutlineGooglePlus size={"28"} className='header_social_icon'  />
-              </button>
+              </a>
+              <a href="https://instagram.com/ekodustechnologiescanada?igshid=MzRlODBiNWFlZA==" style={{color:'white'}} target='_blank'>
               <button>
                 <AiOutlineInstagram size={"25"} className='header_social_icon'  />
               </button>
+              </a>
             </div>
             <div className='header__left_content'>
               <div className='header__left_content_text'>

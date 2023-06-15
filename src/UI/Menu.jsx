@@ -13,7 +13,7 @@ const Menu = ({ismenuOpen}) => {
               <NavLink to={"/"} onClick={()=>ismenuOpen(false)}>Home</NavLink>
             </li>
             <li>
-              <NavLink to={"/about"} onClick={()=>ismenuOpen(false)}>About</NavLink>
+              <NavLink to={"/about"} onClick={()=>ismenuOpen(false)}>About us</NavLink>
             </li>
             <li>
               <NavLink to={"/products"} onClick={()=>ismenuOpen(false)}>Products</NavLink>
